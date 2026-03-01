@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HerSOS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Rights.html">
+    <a href="map.html"></a>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@6.0.0/css/all.css">
+</head>
+
+<body>
+
+    <div class = "graphic">
+        <img src="ASSETS/bg2.png" alt="computer user">
+    </div>
+    <section id="home" class="full-height">
+        <header>
+            <nav class="navbar">
+                <div class="logo">
+                    <img src="ASSETS/logo.png">
+                </div>
+
+                <ul class="menu-links">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#aboutUs" class="nav-link">About Us</a></li>
+                    <li><a href="Rights.html" class="nav-link">Rights</a></li>
+                    <li><a href="#contact" class="nav-link">Contact us</a></li>
+                    <li><a href="profile.html" class="nav-link">Profile</a></li>
+                </ul>
+                <div class="button">
+                    <a href="login.html" class="btn" class="active">Sign In / Sign Up</a>
+                </div>
+                <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
+
+            </nav>
+        </header>
+
+        <div class="content">
+            <h1>HerSOS</h1>
+            <h2>Women's safety is our responsibility</h2>
+        </div>
+    </section>
+
+    <section id="aboutUs" class="full-height">
+        <div class="content">
+            <h2>About Us</h2>
+            <h4>Welcome to HerSOS, a platform dedicated to ensuring the safety and well-being of women everywhere. </h4>
+            <p class="description">
+                HerSOS is the ultimate website for women who want to take charge of their own safety and happiness. It offers a variety of smart features that can help you deal with any challenge or threat in your life. Whether you need to escape a dangerous situation, or just need some guidance, HerSOS has got your back. HerSOS is not just an app, it’s a way of life that inspires women to be brave and strong. 
+                <p>Join HerSOS today and discover a new level of security and well-being.</p>
+                <p>Thank you for choosing HerSOS.</p>
+            <button class="btn scroll-btn" data-target="#ratings">Hire Me</button>
+        </div>
+        <img src="ASSETS/about us.jpg" alt="computer user">
+    </section>
+
+    <section id="ratings" class="full-height">
+        <div class="ratingimg">
+            <img src="ASSETS/rating-removebg-preview.png">
+        </div>
+        <div id="panel" class="panel-container">
+            <strong>
+                How satisfied are you with our <br />
+                customer support performance?
+            </strong>
+            <div class="ratings-container">
+                <div class="rating" data-rating="Unhappy">
+                    <img src="https://cdn-icons-png.flaticon.com/512/187/187150.png" alt="sad face" />
+                    <small>Unhappy</small>
+                </div>
+                <div class="rating" data-rating="Neutral">
+                    <img src="https://cdn-icons-png.flaticon.com/512/187/187136.png" alt="neutral face" />
+                    <small>Neutral</small>
+                </div>
+                <div class="rating active" data-rating="Satisfied">
+                    <img src="https://cdn-icons-png.flaticon.com/512/187/187133.png" alt="happy face" />
+                    <small>Satisfied</small>
+                </div>
+            </div>
+            <button class="btns" id="send">Send Review</button>
+        </div>
+    </section>
+
+    <section id="contact" class="full-height">
+        <div class="container">
+            <div class="content">
+                <div class="left-side">
+                    <div class="address details">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="topic">Address</div>
+                        <div class="text-one">Chennai</div>
+                        <div class="text-two">Tamil Nadu</div>
+                    </div>
+                    <div class="phone details">
+                        <i class="fas fa-phone-alt"></i>
+                        <div class="topic">Phone</div>
+                        <div class="text-one">+0098 9893 5647</div>
+                        <div class="text-two">+0096 3434 5678</div>
+                    </div>
+                    <div class="email details">
+                        <i class="fas fa-envelope"></i>
+                        <div class="topic">Email</div>
+                        <div class="text-one">ragavdharmalingam1@gmail.com</div>
+                        <div class="text-two">info.ragavdharmalingam1@gmail.com</div>
+                    </div>
+                </div>
+                <div class="right-side">
+                    <form action="#">
+                        <div class="input-box">
+                            <input type="text" placeholder="Enter your name">
+                        </div>
+                        <div class="input-box">
+                            <input type="text" placeholder="Enter your email">
+                        </div>
+                        <div class="input-box message-box">
+                            <textarea placeholder="Your message"></textarea>
+                        </div>
+                        <div class="button">
+                            <input type="button" value="Send Now">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <button id="startRecordingBtn">Start Recording</button>
+
+    <form id="emailForm">
+        <label for="recipientEmail">Recipient Email:</label>
+        <input type="email" id="recipientEmail" name="recipientEmail" required>
+        <button type="submit">Send Video</button>
+    </form>
+
+  <button id="emailButton">Send Location via Email</button>
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyApfq9oJlL0Y_w3q4O_hMX8Sr4nCjv2Nno&callback=initMap&v=weekly" defer></script>
+ 
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.message.min.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.form.min.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.server.min.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.sendform.min.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.sendform2.min.js"></script>
+
+    <script src="https://cdn.webrtc-experiment.com/RecordRTC.js"></script>
+    <script src="script2.js"></script>
+    <script src="main.js"></script>
+
+
+    <script>
+       // Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyByyT_n93xT9nkY7gJW9R8-sTvYyZ49J9c",
+  authDomain: "hersos-32a26.firebaseapp.com",
+  projectId: "hersos-32a26",
+  storageBucket: "hersos-32a26.firebasestorage.app",
+  messagingSenderId: "509856607705",
+  appId: "1:509856607705:web:21a907b10667a44ff97dc8",
+  measurementId: "G-D4Q61L1HHZ"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+
+    </script>
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+ <!-- <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const chatbot = document.querySelector('df-messenger');
+        chatbot.setAttribute('projectId', 'rising-abacus-413315'); // Replace with your Dialogflow project ID
+        chatbot.setAttribute('chat-title', 'HerSOS'); // Customize chatbot title
+        chatbot.setAttribute('agent-id', '104728826783532959238'); // Replace with your Dialogflow agent ID
+        chatbot.setAttribute('language-code', 'en'); // Specify the language code
+        chatbot.setAttribute('is-mobile', 'true'); // Adjust for mobile responsiveness
+    });
+</script> -->
+
+    
+
+</body>
+
+</html>
